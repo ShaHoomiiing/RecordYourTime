@@ -79,7 +79,7 @@ class TimeViewController: UIViewController, UITextFieldDelegate, UIPickerViewDel
     func makeTimeLabel(count: Int) -> (String) {
         let sec = count % 60
         let min = (count / 60) % 60
-        let hour = (count / 60) / 60
+        let hour = count / 3600
         
         let sec_string = "\(sec)".count == 1 ? "0\(sec)" : "\(sec)"
         let min_string = "\(min)".count == 1 ? "0\(min)" : "\(min)"
